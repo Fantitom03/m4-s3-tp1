@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Sofá Chesterfield",
+        "price": 2500000,
+        "image": "/images/producto1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Mesa de Centro",
+        "price": 150000,
+        "image": "/images/producto2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Lámpara Moderna",
+        "price": 89000,
+        "image": "/images/producto3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Estantería Roble",
+        "price": 350000,
+        "image": "/images/producto4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Silla Ergonomica",
+        "price": 180000,
+        "image": "/images/producto5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cama King Size",
+        "price": 1200000,
+        "image": "/images/producto6.jpg"
+    }
+]
