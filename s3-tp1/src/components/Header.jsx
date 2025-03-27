@@ -1,15 +1,13 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
 import { CartContext } from "../context/CartContext";
 import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
-  const { theme } = useContext(ThemeContext);
   const { totalItems, toggleCart } = useContext(CartContext);
 
   return (
 
-    <header className={`${theme === "dark" ? "bg-gray-800" : "bg-green-500"} shadow-sm z-30 relative`}>
+    <header className={`bg-green-500 dark:bg-gray-800 shadow-sm z-30 relative`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           
@@ -20,7 +18,7 @@ const Header = () => {
           />
 
           <h1 className={`text-2xl font-serif font-bold cursor-default hover:scale-110
-          ${theme === "dark" ? "text-green-200" : "text-green-100"}`}
+          text-green-200 dark:text-green-100  ` }
           >
             Muebles del Hogar
           </h1>
@@ -33,8 +31,8 @@ const Header = () => {
 
           <button
             onClick={toggleCart}
-            className={`flex items-center gap-2 px-6 py-2 text-white rounded-full transition-colors duration-300
-            ${theme === "dark" ? "bg-green-700 hover:bg-green-600" : "bg-green-600 hover:bg-green-700"}`}
+            className={`flex items-center gap-2 px-6 py-2 text-white rounded-full transition-colors duration-300 cursor-pointer
+            bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600`}
           >
 
             <span>🛒</span>

@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { ThemeContext } from "./context/ThemeContext";
 import { CartContext } from "./context/CartContext";
 import ProductList from "./components/ProductList";
 import Header from "./components/Header";
@@ -7,13 +6,11 @@ import Footer from "./components/Footer";
 import CartSidebar from "./components/CartSideBar";
 
 function App() {
-  const { theme } = useContext(ThemeContext);
   const { isCartOpen} = useContext(CartContext);
 
   return (
-    <div className={`min-h-screen flex flex-col transition-colors duration-300 ${
-      theme === "dark" ? "bg-gray-900" : "bg-green-50"
-    }`}>
+    <div className={`min-h-screen flex flex-col transition-colors duration-300
+    bg-green-50 dark:bg-gray-900`}>
       <Header />
       <div className="flex-1 flex">
         <main className={`flex-1 transition-margin duration-300 ${isCartOpen ? "mr-96" : "mr-0"}`}>

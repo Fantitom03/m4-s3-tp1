@@ -3,13 +3,12 @@ import { CartContext } from "../context/CartContext";
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, totalPrice } = useContext(CartContext);
-  const { theme } = useContext(ThemeContext);
-  
+
     return (
 
-      <div className={`p-6 rounded-lg shadow-md h-fit ${theme === "dark" ? "bg-gray-700" : "bg-white"}`}>
+      <div className={`p-6 rounded-lg shadow-md h-fit bg-white dark:bg-gray-700`}>
         
-        <h2 className={`text-2xl font-bold mb-4 ${theme === "dark" ? "text-green-200" : "text-gray-800"}`}>
+        <h2 className={`text-2xl font-bold mb-4 text-gray-800 dark:text-green-200`}>
           Carrito
         </h2>
 
